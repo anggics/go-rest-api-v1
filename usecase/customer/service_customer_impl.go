@@ -15,7 +15,7 @@ var (
 	out    *entity.Customer
 )
 
-func NewBookService(
+func CustomerService(
 	repoCustomer customer_repos.CustomerRepository,
 ) ServiceCustomer {
 	return &serviceCustomerImpl{customerRepos: repoCustomer}

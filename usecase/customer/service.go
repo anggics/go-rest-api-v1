@@ -10,4 +10,5 @@ type ServiceCustomer interface {
 	SaveCustomer(in entity.Customer) error
 	DeleteCustomerById(in int) error
 	UpdateCustomerById(id int, in entity.Customer) error
+
 }

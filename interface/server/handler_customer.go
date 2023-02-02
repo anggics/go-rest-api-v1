@@ -44,7 +44,7 @@ func (b *customerHandler) customerSaveData() func(c *gin.Context) {
 		err := c.BindJSON(&requestBody)
 		if err != nil {
 			c.String(http.StatusInternalServerError, fmt.Sprint(err))
-		} else {
+		} //else {
 			switch {
 			case requestBody.FirstName == "":
 				reps, err := json.Marshal("firstName is required")
@@ -74,7 +74,7 @@ func (b *customerHandler) customerSaveData() func(c *gin.Context) {
 					c.String(http.StatusOK, string(jsonByte))
 				}
 			}
-		}
+		//}
 	}
 }
 

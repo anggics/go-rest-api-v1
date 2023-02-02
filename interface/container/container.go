@@ -14,6 +14,6 @@ type Container struct {
 
 func SetUpContainer(tx *gorm.DB) Container {
 	database.Migrate(tx)
-	customerServices := customer.NewBookService(customer_repos.SetupCustomerRepo(tx))
+	customerServices := customer.CustomerService(customer_repos.SetupCustomerRepo(tx))
 	return Container{CustomerService: customerServices}
 }
