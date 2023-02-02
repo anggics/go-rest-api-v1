@@ -1,6 +1,13 @@
 # go-rest-api-v1
 create, update, read, delete menggunakan rest api. digunakan untuk integrasi system to system
 
+Getting Started 
+- Gorm (ORM) Guide https://gorm.io
+- Gin Guide https://gin-gonic.com/docs/
+
+
+run main.go with terminal
+> go run main.go
 
 GET    /                         --> rest-api/interface/server.setupRouter.func1 (3 handlers)
 GET    /customer/v1/getAllData   --> rest-api/interface/server.(*customerHandler).getAllDataCustomer.func1 (3 handlers)
